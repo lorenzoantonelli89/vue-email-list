@@ -4,8 +4,8 @@ function init() {
             url: "https://flynn.boolean.careers/exercises/api/random/mail",
             method: "GET",
             success: function (data) {
-                const res = data.response
-                $('.row').append('<h1>' + res + '</h1>')
+                const res = data.response;
+                $('#chat-list').append('<li>' + res + '</li>');
             },
             error: function () {
                 console.log('error');

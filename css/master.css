@@ -7,9 +7,12 @@
 
 .container{
     background-color: lightskyblue;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: green;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
 }

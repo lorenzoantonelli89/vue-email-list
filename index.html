@@ -7,15 +7,35 @@
     <title>Esercizio API mail</title>
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- lnk vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <!-- my js -->
     <script src="js/main.js"></script>
+    <script src="js/second.js"></script>
     <!-- my css -->
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
-    <div class="container">
+    <div id="app" class="container">
         <div class="row">
-            
+            <ul id="chat-list">
+                <li>
+                    <h1>
+                        Email con Jquery
+                    </h1>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <h1>
+                        Email con VueJS
+                    </h1>
+                </li>
+                <li v-for="elem in arrEmail">
+                    {{elem}}
+                </li>
+            </ul>
         </div>
     </div>
     
